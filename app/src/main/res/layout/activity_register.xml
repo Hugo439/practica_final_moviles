@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtNameExercise"
+            android:id="@+id/txtUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="74dp"
@@ -46,22 +46,22 @@
             android:inputType="text"
             android:text="@string/user_name"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/txtNameExercise"
-            app:layout_constraintTop_toBottomOf="@+id/txtNameExercise" />
+            app:layout_constraintStart_toStartOf="@+id/txtUserName"
+            app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
 
         <TextView
-            android:id="@+id/txtRepeticiones"
+            android:id="@+id/txtName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/name"
             android:textColor="@color/gold"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/txtNameExercise"
+            app:layout_constraintStart_toStartOf="@+id/txtUserName"
             app:layout_constraintTop_toBottomOf="@+id/editTxtUserNameRegister" />
 
         <EditText
-            android:id="@+id/editRepetitions"
+            android:id="@+id/editName"
             android:layout_width="183dp"
             android:layout_height="48dp"
             android:ems="10"
@@ -69,7 +69,7 @@
             android:text="@string/name"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/editTxtUserNameRegister"
-            app:layout_constraintTop_toBottomOf="@+id/txtRepeticiones" />
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
         <TextView
             android:id="@+id/txtPesoLevantado"
@@ -79,8 +79,8 @@
             android:text="@string/surname"
             android:textColor="@color/gold"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/txtRepeticiones"
-            app:layout_constraintTop_toBottomOf="@+id/editRepetitions" />
+            app:layout_constraintStart_toStartOf="@+id/txtName"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
 
         <EditText
             android:id="@+id/editTxtweight"
@@ -90,7 +90,7 @@
             android:inputType="text"
             android:text="@string/surname"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/editRepetitions"
+            app:layout_constraintStart_toStartOf="@+id/editName"
             app:layout_constraintTop_toBottomOf="@+id/txtPesoLevantado" />
 
         <TextView
@@ -151,7 +151,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editTxtPasswordRegister" />
 
         <Button
-            android:id="@+id/btnInsert"
+            android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
@@ -169,7 +169,7 @@
             android:text="@string/account_question_positive"
             android:textColor="@color/light_grey"
             app:layout_constraintStart_toStartOf="@+id/editTxtPasswordRegister"
-            app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
+            app:layout_constraintTop_toBottomOf="@+id/btnNext" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -11,23 +11,14 @@ import es.etg.dam.pmdm14.practica_final_moviles.utils.Movible
 class RegisterActivity : AppCompatActivity(), Movible {
 
     private lateinit var binding: ActivityRegisterBinding
-    companion object {
-        lateinit var database: ExcercisesDatabase
-        const val DATABASE_NAME = "user-db"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
         // Inicializamos View Binding
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        database =  Room.databaseBuilder(this,
-            ExcercisesDatabase::class.java,
-            DATABASE_NAME
-        ).build()
 
         // Configuramos el listener para el botón "Cancelar"
         binding.btnCancelRegister.setOnClickListener {

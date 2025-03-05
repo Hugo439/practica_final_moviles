@@ -23,21 +23,18 @@ class PrincipalActivity : AppCompatActivity(), Movible {
         binding = ActivityPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configuramos el toolbar
+       // Configuramos el toolbar
         binding.toolbar.title = getString(R.string.app_name)
         setSupportActionBar(binding.toolbar)
-
-        /*
-        // Obtenemos el nombre del usuario desde el intent
-        val userName = intent.getStringExtra("user_name")
-
-        // Mostramos un mensaje de bienvenida
-        val text = "Bienvenido $userName !!"
-        Toast.makeText(this, text, Toast.LENGTH_SHORT).show()*/
 
         // Configuramos el botón para cambiar de actividad
         binding.btnPlanificacion.setOnClickListener {
             cambiarActividad(this, PlanningActivity::class.java)
+        }
+        // Configuramos el botón para cambiar de actividad
+        binding.btnProgreso.setOnClickListener {
+            val text = "No implementado!!"
+            Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
         }
     }
 

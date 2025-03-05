@@ -1,7 +1,6 @@
 package es.etg.dam.pmdm14.practica_final_moviles.data.Preferencias
 
 import android.content.Context
-import es.etg.dam.pmdm14.gym.preferencias.Preferencia
 
 private const val PREFERENCIAS_USUARIO = "PreferenciasUsuario"
 

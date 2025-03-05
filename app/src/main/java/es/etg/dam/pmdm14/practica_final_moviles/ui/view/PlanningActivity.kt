@@ -1,15 +1,10 @@
 package es.etg.dam.pmdm14.practica_final_moviles.ui.view
 
-import android.annotation.SuppressLint
+
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.commit
-import es.etg.dam.pmdm14.gym.R
 import es.etg.dam.pmdm14.gym.databinding.ActivityPlanningBinding
 import es.etg.dam.pmdm14.practica_final_moviles.utils.Movible
 
@@ -27,13 +22,9 @@ class PlanningActivity : AppCompatActivity(), Movible {
 
         setContentView(binding.root)
 
-        val mensaje = "No implementado!!"
-        val duration = Toast.LENGTH_LONG
-        val toast = Toast.makeText(this, mensaje,duration)
 
-
-        binding.btmSelecEjer.setOnClickListener{
-            toast.show()
+        binding.btnInsertEjer.setOnClickListener{
+            cambiarActividad(this, ExercisesActivity::class.java)
         }
         binding.btnExit.setOnClickListener{
             cambiarActividad(this, PrincipalActivity::class.java)
