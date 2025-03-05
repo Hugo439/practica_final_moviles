@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="es.etg.dam.pmdm14.practica_final_moviles.ui.view.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="84dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="54dp"
+            android:text="@string/user_name"
+            android:textColor="@color/gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleLogin" />
+
+        <EditText
+            android:id="@+id/editTxtUserName"
+            android:layout_width="183dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/user_name"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtUserName" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/password"
+            android:textColor="@color/gold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txtUserName"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtUserName" />
+
+        <EditText
+            android:id="@+id/editTxtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/editTxtUserName"
+            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="@string/remember_me"
+            android:textColor="@color/light_grey"
+            app:layout_constraintStart_toStartOf="@+id/editTxtPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtPassword" />
+
+        <TextView
+            android:id="@+id/txtForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:text="@string/forget_question"
+            android:textColor="@color/light_grey"
+            app:layout_constraintStart_toStartOf="@+id/txtPassword"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRemember" />
+
+        <Button
+            android:id="@+id/btnCancelLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="69dp"
+            android:backgroundTint="@color/gold"
+            android:text="@android:string/cancel"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtForgot" />
+
+        <Button
+            android:id="@+id/btnLoginLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:backgroundTint="@color/gold"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCancelLogin"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:text="@string/account_question_negative"
+            android:textColor="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="@+id/txtForgot"
+            app:layout_constraintTop_toBottomOf="@+id/btnLoginLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

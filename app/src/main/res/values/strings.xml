@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Gym</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome</string>
+    <!-- lo ha predefinido android -->
+    <!-- <string name="cancel">cancel</string> -->
+    <string name="next">Next</string>
+    <string name="user_name">User name</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="password">Password</string>
+    <string name="progress">Progress</string>
+    <string name="planning">Planning</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="exit">Exit</string>
+    <string name="remember_me">Remember me</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="forget_question">Have you forgotten your password?</string>
+    <string name="account_question_positive">Do you already have an account?</string>
+    <string name="account_question_negative">Don\'t have an account?</string>
+    <string name="close_gym_lathe">Close gym lathe</string>
+    <string name="open_gym_lathe">Open gym lathe</string>
+    <string name="select_exercise">Select exercise</string>">
+    <string name="msg_click_profile">you clicked on the profile</string>
+    <string name="msg_click_settings">you clicked on settings</string>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gimnasio</string>
+    <string name="register">Registrar</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="next">Siguiente</string>
+    <string name="user_name">Nombre Usuario</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="password">Contraseña</string>
+    <string name="progress">Progreso</string>
+    <string name="planning">Planificación</string>
+    <string name="settings">Ajustes</string>
+    <string name="profile">Perfil</string>
+    <string name="exit">Salir</string>
+    <string name="remember_me">Recordarme</string>
+    <string name="forget_question">¿Has olvidado la contraseña?</string>
+    <string name="account_question_positive">¿Ya tienes una cuenta</string>
+    <string name="account_question_negative">¿No tienes una cuenta</string>
+    <string name="close_gym_lathe">Cerrar torno</string>
+    <string name="open_gym_lathe">Abrir torno</string>
+    <string name="select_exercise">Seleccionar ejercicio</string>
+    <string name="msg_click_profile">Has pulsado en el perfil</string>
+    <string name="msg_click_settings">Has pulsado en ajustes</string>
+</resources>

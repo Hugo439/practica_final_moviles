@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    android:orientation="vertical"
+    tools:context="es.etg.dam.pmdm14.practica_final_moviles.ui.view.PlanningActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="350dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerViewCalendario"
+            android:name="es.etg.dam.pmdm14.gym.FragmentPlanningActivityCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="es.etg.dam.pmdm14.gym.view.FragmentPlanningActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btmSelecEjer"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/dark_grey"
+        android:text="@string/select_exercise"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTorno"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnTorno"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="@color/dark_grey"
+        android:gravity="center"
+        android:onClick="abrirTorno"
+        android:text="@string/open_gym_lathe"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="47dp"
+        android:backgroundTint="@color/grey"
+        android:gravity="center"
+        android:onClick="cerrarTorno"
+        android:text="@string/close_gym_lathe"
+        android:textAlignment="center"
+        android:textColor="@color/gold"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="94dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/dark_grey"
+        android:text="@string/exit"
+        android:textColor="@color/gold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmSelecEjer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
