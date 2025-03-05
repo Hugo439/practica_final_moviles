@@ -20,14 +20,14 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerViewCalendario"
-            android:name="es.etg.dam.pmdm14.gym.FragmentPlanningActivityCalendar"
+            android:name="es.etg.dam.pmdm14.practica_final_moviles.ui.view.FragmentPlanningActivityCalendar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="visible" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
-            android:name="es.etg.dam.pmdm14.gym.view.FragmentPlanningActivity"
+            android:name="es.etg.dam.pmdm14.practica_final_moviles.ui.view.FragmentPlanningActivity"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="invisible" />

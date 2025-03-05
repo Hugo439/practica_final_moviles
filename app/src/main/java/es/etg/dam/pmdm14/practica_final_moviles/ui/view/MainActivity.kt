@@ -4,12 +4,9 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import es.etg.dam.pmdm14.gym.databinding.ActivityMainBinding
 import es.etg.dam.pmdm14.practica_final_moviles.utils.Movible
 
@@ -23,7 +20,6 @@ class MainActivity : AppCompatActivity(), Movible {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
         // Inicializamos View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -56,10 +52,9 @@ class MainActivity : AppCompatActivity(), Movible {
         }
     }
 
-    //Solicita el permiso
     private fun requestReadConctactsPermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.CAMERA)) {
+                Manifest.permission.READ_CONTACTS)) {  // Cambié de CAMERA a READ_CONTACTS
             //El usuario ya ha rechazado el permiso anteriormente, debemos indicarle que vaya a ajustes.
             Toast.makeText(this,"Conceda permisos en ajustes", Toast.LENGTH_SHORT).show()
         } else {

@@ -25,6 +25,11 @@
     <string name="select_exercise">Select exercise</string>">
     <string name="msg_click_profile">you clicked on the profile</string>
     <string name="msg_click_settings">you clicked on settings</string>
+    <string name="insert_exercise">Insert exercise</string>
+    <string name="name_exercise">Exercise name</string>
+    <string name="repetitions_exercise">Repetitions</string>
+    <string name="weight_exercise">Weight</string>
+
 
 
 </resources>

@@ -18,7 +18,6 @@ class PrincipalActivity : AppCompatActivity(), Movible {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
         // Inicializamos View Binding
         binding = ActivityPrincipalBinding.inflate(layoutInflater)

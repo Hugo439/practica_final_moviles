@@ -19,7 +19,7 @@ class PlanningActivity : AppCompatActivity(), Movible {
 
     private var tornoAbierto = true
 
-    @SuppressLint("MissingInflatedId", "ShowToast")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

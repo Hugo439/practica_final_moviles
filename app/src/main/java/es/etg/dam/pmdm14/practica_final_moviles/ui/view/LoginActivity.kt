@@ -1,11 +1,11 @@
 package es.etg.dam.pmdm14.practica_final_moviles.ui.view
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import es.etg.dam.pmdm14.gym.databinding.ActivityLoginBinding
-import es.etg.dam.pmdm14.gym.preferencias.PreferenciaUtil
+import es.etg.dam.pmdm14.practica_final_moviles.data.Preferencias.PreferenciaUtil
+
 import es.etg.dam.pmdm14.practica_final_moviles.utils.Movible
 
 class LoginActivity : AppCompatActivity(), Movible {

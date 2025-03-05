@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context="es.etg.dam.pmdm14.practica_final_moviles.ui.view.RegisterActivity">
+    tools:context="es.etg.dam.pmdm14.practica_final_moviles.ui.view.ExercisesActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="156dp"
             android:layout_marginTop="44dp"
-            android:text="@string/register"
+            android:text="@string/insert_exercise"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,21 +30,21 @@
             android:id="@+id/txtNameExercise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="74dp"
-            android:layout_marginTop="32dp"
-            android:text="@string/user_name"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="72dp"
+            android:text="@string/name_exercise"
             android:textColor="@color/gold"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTitleRegister" />
 
         <EditText
-            android:id="@+id/editTxtUserNameRegister"
+            android:id="@+id/editTxtNameExercise"
             android:layout_width="183dp"
             android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
-            android:text="@string/user_name"
+            android:text="@string/name_exercise"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/txtNameExercise"
             app:layout_constraintTop_toBottomOf="@+id/txtNameExercise" />
@@ -53,12 +53,12 @@
             android:id="@+id/txtRepeticiones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/name"
+            android:layout_marginTop="28dp"
+            android:text="@string/repetitions_exercise"
             android:textColor="@color/gold"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/txtNameExercise"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtUserNameRegister" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxtNameExercise" />
 
         <EditText
             android:id="@+id/editRepetitions"
@@ -68,7 +68,7 @@
             android:inputType="text"
             android:text="@string/name"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/editTxtUserNameRegister"
+            app:layout_constraintStart_toStartOf="@+id/editTxtNameExercise"
             app:layout_constraintTop_toBottomOf="@+id/txtRepeticiones" />
 
         <TextView
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/surname"
+            android:text="@string/weight_exercise"
             android:textColor="@color/gold"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/txtRepeticiones"
@@ -86,6 +86,7 @@
             android:id="@+id/editTxtweight"
             android:layout_width="183dp"
             android:layout_height="48dp"
+            android:layout_marginStart="4dp"
             android:ems="10"
             android:inputType="text"
             android:text="@string/surname"
@@ -93,62 +94,17 @@
             app:layout_constraintStart_toStartOf="@+id/editRepetitions"
             app:layout_constraintTop_toBottomOf="@+id/txtPesoLevantado" />
 
-        <TextView
-            android:id="@+id/txtEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/email"
-            android:textColor="@color/gold"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/txtPesoLevantado"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtweight" />
-
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="183dp"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="@string/email"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/editTxtweight"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
-
-        <TextView
-            android:id="@+id/txtPasswordRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@string/password"
-            android:textColor="@color/gold"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/txtEmail"
-            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
-
-        <EditText
-            android:id="@+id/editTxtPasswordRegister"
-            android:layout_width="176dp"
-            android:layout_height="48dp"
-            android:ems="10"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-            app:layout_constraintTop_toBottomOf="@+id/txtPasswordRegister" />
-
         <Button
             android:id="@+id/btnCancelRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="176dp"
             android:backgroundTint="@color/gold"
             android:text="@android:string/cancel"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTxtPasswordRegister" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxtweight" />
 
         <Button
             android:id="@+id/btnInsert"
@@ -156,21 +112,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="64dp"
             android:backgroundTint="@color/gold"
-            android:text="@string/next"
+            android:text="@string/insert_exercise"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="@+id/btnCancelRegister"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/txtHaveAccount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="@string/account_question_positive"
-            android:textColor="@color/light_grey"
-            app:layout_constraintStart_toStartOf="@+id/editTxtPasswordRegister"
-            app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

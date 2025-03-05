@@ -23,4 +23,8 @@
     <string name="select_exercise">Seleccionar ejercicio</string>
     <string name="msg_click_profile">Has pulsado en el perfil</string>
     <string name="msg_click_settings">Has pulsado en ajustes</string>
+    <string name="insert_exercise">Añadir ejercicio</string>
+    <string name="name_exercise">Nombre del ejercicio</string>
+    <string name="repetitions_exercise">Repeticiones</string>
+    <string name="weight_exercise">Peso</string>
 </resources>

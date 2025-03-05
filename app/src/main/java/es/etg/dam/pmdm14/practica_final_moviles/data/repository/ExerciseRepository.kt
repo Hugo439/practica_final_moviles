@@ -3,6 +3,7 @@ package es.etg.dam.pmdm14.practica_final_moviles.data.repository
 import es.etg.dam.pmdm14.practica_final_moviles.data.database.dao.ExerciseDao
 import es.etg.dam.pmdm14.practica_final_moviles.data.database.entities.ExerciseEntity
 import es.etg.dam.pmdm14.practica_final_moviles.domain.model.Exercise
+import es.etg.dam.pmdm14.practica_final_moviles.domain.usecases.InsertExerciseUserCase
 import javax.inject.Inject
 
 class ExerciseRepository @Inject constructor(
@@ -45,4 +46,13 @@ class ExerciseRepository @Inject constructor(
             null
         }
     }
+    suspend fun addExercise(exercise: Exercise) {
+        val exerciseEntity = ExerciseEntity(
+            nombreEjercicio = exercise.nombreEjercicio,
+            repeticiones = exercise.repeticiones,
+            pesoLevantado = exercise.pesoLevantado
+        )
+        exerciseDao.insert(exerciseEntity)
+    }
+
 }
